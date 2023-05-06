@@ -1,0 +1,75 @@
+.grid-container{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 200px 200px 200px 200px auto;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "heading1 heading1 about"
+    "heading1 heading1 post"
+    "heading2 heading2 post"
+    "heading2 heading2 social"
+    "footer footer footer";
+    grid-gap: 0.5rem;
+    
+}
+header{
+    background-color: #49c5b6;
+    text-align: center;
+    grid-area: header;
+    border-radius: 1rem;
+}
+header h1{
+    align-self: center;
+}
+nav{
+    background-color: #2779a7;
+    text-align: center;
+    grid-area: nav;
+    border-radius: 1rem;
+    
+}
+nav a{
+    text-decoration: none;
+    padding-left: 3rem;
+    font-size: large;
+}
+.heading1{
+    background-color: #2779a7;
+    grid-area: heading1;
+    border-radius: 1rem;
+}
+.heading2{
+    background-color:#2779a7;
+    
+    grid-area: heading2;
+    border-radius: 1rem;
+}
+.about{
+    background-color:#2779a7;
+    text-align: center;
+    grid-area: about;
+    border-radius: 1rem;
+}
+.about img{
+    border-radius: 50%;
+}
+.post{
+    background-color:#2779a7;
+    text-align: center;
+    grid-area: post;
+    border-radius: 1rem;
+}
+.social{
+    background-color:#2779a7;
+    text-align: center;
+    grid-area: social;
+    border-radius: 1rem;
+}
+footer{
+    background-color:darkcyan;
+    text-align: center;
+    grid-area: footer;
+    border-radius: 1rem;
+}
